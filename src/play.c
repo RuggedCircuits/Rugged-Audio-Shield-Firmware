@@ -269,6 +269,7 @@ void play_fill_buffer(void)
 
       // Indicate that after the buffer we've just read in plays, we should stop
       gCtrlFlags = (1 << (readBufIx));
+      play_stop();
     }
 
     // Are we waiting to kickstart the playback?
